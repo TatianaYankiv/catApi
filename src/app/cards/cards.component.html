@@ -1,0 +1,11 @@
+<mat-spinner class="spinner" *ngIf="loading$ | async"></mat-spinner>
+<mat-card class="card" *ngFor="let card of cards$ |async">
+    <mat-card-title-group>
+      <mat-card-title>{{card.breeds[0]?.name || 'unknown'}}</mat-card-title>
+      <mat-card-subtitle>Medium</mat-card-subtitle>
+      <img mat-card-md-image src={{card.url}} >
+    </mat-card-title-group>
+    <mat-card-content>
+        {{card.breeds[0]?.description || 'Don`t have description'}}
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,30 @@
+.card {
+    width: 600px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.card_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.container {
+    display: flex;
+}
+.card_descr{
+    padding: 20px;
+}
+:host {
+    display: block;
+    position: relative;
+}
+
+.spinner {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    z-index: 1;
+}
